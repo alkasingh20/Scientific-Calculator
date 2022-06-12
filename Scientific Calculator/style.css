@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+.calculator{
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px 0 30px 0;
+}
+.calculator input{
+    background: none;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 40px;
+    text-align: right;
+    border: 2px solid #676767;
+}
+
+.calculator-btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.cal-btn{
+    color: blue;
+    background-color: antiquewhite;
+    font-size: 30px;
+    border: 2px solid rebeccapurple;
+}
+
+.btn-func{
+    background-color: blueviolet;
+    color: white;
+}
+
+.btn-special{
+    background-color: tomato;
+    color: white;
+}
+
+.btn-equal{
+    grid-row: span 2;
+}

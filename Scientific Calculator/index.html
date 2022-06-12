@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" value="0" id="screen">
+        <input type="text" value="0" id="screen_result">
+
+
+        <div class="calculator-btn">
+            <button class="cal-btn btn-special" id="btn-clear">C</button>
+            <button class="cal-btn btn-func" onclick="showVal('%')">%</button>
+            <button class="cal-btn btn-func" onclick="showVal('/')">&divide;</button>
+            <button class="cal-btn btn-func"onclick="showVal('x')">&times;</button>
+
+            <button class="cal-btn" onclick="showVal('7')">7</button>
+            <button class="cal-btn" onclick="showVal('8')">8</button>
+            <button class="cal-btn" onclick="showVal('9')">9</button>
+            <button class="cal-btn btn-func" onclick="showVal('-')">&minus;</button>
+
+            <button class="cal-btn" onclick="showVal('4')">4</button>
+            <button class="cal-btn" onclick="showVal('5')">5</button>
+            <button class="cal-btn" onclick="showVal('6')">6</button>
+            <button class="cal-btn btn-func" onclick="showVal('+')">&plus;</button>
+
+            <button class="cal-btn" onclick="showVal('1')">1</button>
+            <button class="cal-btn" onclick="showVal('2')">2</button>
+            <button class="cal-btn" onclick="showVal('3')">3</button>
+            <button class="cal-btn btn-special btn-equal"id='btn-equal'>&equals;</button>
+
+            <button class="cal-btn" onclick="showVal('.')">.</button>
+            <button class="cal-btn" onclick="showVal('0')">0</button>
+            <button class="cal-btn" onclick="showVal('00')">00</button>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="math.min.js"></script>
+    <script src="style.js"></script>
+</body>
+</html>
